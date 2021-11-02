@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="main.css">
+
+	<title>Hello, world!</title>
+</head>
+
+
+
+<body style="background: black; color: white; opacity: 0; transition: all 2s; margin: 0px;">
+	<div class="black-background">
+		<div class="white-background">
+			<div style="display: flex;">
+				<p class="이미지"></p>
+				<p class="설명"></p>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a id="logo" class="navbar-brand" href="#" style="color: white; ">SHIRTER</a>
+			<p class="menu">MENU</p>
+		</div>
+	</nav>
+	<ul class="list-group">
+		<li class="list-group-item" style="color: orange">New Arrival</li>
+		<li class="list-group-item">An active item</li>
+		<li class="list-group-item">A second item</li>
+		<li class="list-group-item">A third item</li>
+		<li class="list-group-item">A fourth item</li>
+	</ul>
+
+
+	<div style="position: relative; overflow: hidden; margin-top: 100px;">
+		<div class="products-box">
+			<div class="img-item">
+				<img src="img/%EC%85%94%EC%B8%A01-removebg-preview.png">
+			</div>
+			<div class="img-item">
+				<img src="img/%EC%85%94%EC%B8%A02-removebg-preview.png">
+			</div>
+			<div class="img-item">
+				<img src="img/%EC%85%94%EC%B8%A03-removebg-preview.png">
+			</div>
+			<div class="img-item">
+				<img src="img/%EC%85%94%EC%B8%A04-removebg-preview.png">
+			</div>
+		</div>
+
+		<button class="next">NEXT</button>
+		<button class="before">BEFORE</button>
+	</div>
+
+
+
+
+	<script>
+		window.onload = function() {
+			$('body').css('opacity', '1')
+		};
+
+
+		$('.img-item').eq(0).click(function() {
+			$('.black-background').slideDown();
+			$('.이미지').html('').append('<img src="img/%EC%85%94%EC%B8%A01-removebg-preview.png">')
+			$('.설명').html('').append(
+				`<span>
+<p><strong>Price : </strong>149,000원</p>
+<p><strong>Size : </strong>  L , M , S</p>
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam accusantium ratione possimus maiores aspernatur eos dolores, incidunt voluptatibus voluptatem neque omnis dolore iste tempora similique, expedita nam nostrum in?</p>
+		        </span>`)
+		});
+		$('.img-item').eq(1).click(function() {
+			$('.black-background').slideDown();
+			$('.이미지').html('').append('<img src="img/%EC%85%94%EC%B8%A02-removebg-preview.png">')
+			$('.설명').html('').append(`<span>
+<p><strong>Price : </strong>149,000원</p>
+<p><strong>Size : </strong>  L , M , S</p>
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam accusantium ratione possimus maiores aspernatur eos dolores, incidunt voluptatibus voluptatem neque omnis dolore iste tempora similique, expedita nam nostrum in?</p>
+		        </span>`)
+		});
+		$('.img-item').eq(2).click(function() {
+			$('.black-background').slideDown();
+			$('.이미지').html('').append('<img src="img/%EC%85%94%EC%B8%A03-removebg-preview.png">')
+			$('.설명').html('').append(`<span>
+<p><strong>Price : </strong>149,000원</p>
+<p><strong>Size : </strong>  L , M , S</p>
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam accusantium ratione possimus maiores aspernatur eos dolores, incidunt voluptatibus voluptatem neque omnis dolore iste tempora similique, expedita nam nostrum in?</p>
+		        </span>`)
+		});
+		$('.img-item').eq(3).click(function() {
+			$('.black-background').slideDown();
+			$('.이미지').html('').append('<img src="img/%EC%85%94%EC%B8%A04-removebg-preview.png">')
+			$('.설명').html('').append(`<span>
+<p><strong>Price : </strong>149,000원</p>
+<p><strong>Size : </strong>  L , M , S</p>
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam accusantium ratione possimus maiores aspernatur eos dolores, incidunt voluptatibus voluptatem neque omnis dolore iste tempora similique, expedita nam nostrum in?</p>
+		        </span>`)
+		});
+
+
+
+		$('.black-background').click(function(e) {
+			if (e.target == e.currentTarget) {
+				$('.black-background').slideUp();
+			}
+		});
+
+
+
+		var 현재사진 = 1;
+		$('.next').click(function() {
+			if (현재사진 < $('.img-item').length) {
+				$('.products-box').css('transform', 'translate(-' + 현재사진 + '00vw)');
+				현재사진 = 현재사진 + 1;
+			}
+		});
+		$('.before').click(function() {
+			$('.products-box').css('transform', 'translate(-' + (현재사진 - 2) + '00vw)');
+			if (현재사진 > 1) {
+				현재사진 = 현재사진 - 1;
+			}
+		});
+
+		$('#logo').click(function homeHref() {
+			location.href = "index.html";
+		});
+		$('.list-group-item').eq(0).click(function homeHref() {
+			location.href = "newArrival.html";
+		});
+		$('.menu').click(function() {
+			$('.list-group-item').css('background', 'black')
+			$('.list-group').slideToggle(200)
+
+		})
+
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+</body>

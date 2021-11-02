@@ -1,0 +1,380 @@
+
+.main-background {
+	width: 100%;
+	height: 1000%;
+	background-image: url(%EC%85%94%EC%B8%A01.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	
+}
+
+.main-background > h1 {
+		text-align: center;
+
+}
+
+.jumbotron {
+	height: 500px;
+	background-color: white;
+
+}
+
+.display-4 {
+	margin-top: -70px;
+}
+
+.lead {
+	margin-top: -20px;
+}
+
+#login {
+	margin-top: 350px;
+	align-content: center;
+}
+
+.my-4 {
+}
+
+.background {
+  background: yellow;
+	margin-top: 100px;
+	margin-bottom: 800px;
+  height: 1400px;	
+}
+
+.container {
+	
+}
+
+.menu {
+	margin-top: 20px;
+ 	cursor: pointer;
+}
+
+.navbar-brand {
+	
+}
+
+.list-group {
+	display: none;
+}
+
+.list-group-item {
+	cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+
+
+#test {
+	display: none;
+}
+
+#test0 {
+	display: none;
+}
+
+#test1 {
+	display: none;
+}
+
+.test {
+	float: left;
+	width: 400px;
+
+	color: white;
+	position: sticky;
+	top: 0;}
+
+.navbar {
+	position: sticky;
+	top: 10px;
+}
+
+.card-background {
+	
+
+}
+
+.slide-box img{
+  width: 100%;
+	height: 900px;
+	
+
+}
+
+.card-box {
+
+}
+
+.grey {
+  height: 800px;
+	margin-top: 200px;
+}
+
+.image {
+	background: blue;
+	float: right;
+	width: 500px;
+	position: sticky;
+	top:0;
+/*
+	display: block;
+	margin: auto;
+*/
+	transition: all 1s;
+}
+
+.content {
+	display: inline;
+	width: 400px;
+	color: white;
+	font-size: 20px;
+	transition: all 0.5s;
+}
+
+
+.background1 {
+	background: black;
+	margin-top: 100px;
+	margin-bottom: 400px;
+  height: 1600px;	
+}
+
+.hi {
+	color: red;
+}
+
+#바디 {
+	background: black;
+	height: 100%;
+	color: white;
+}
+
+.btnn {
+	color: white;
+	display: block;
+	margin: auto;
+	padding-top: 20px;
+	border: 0;
+	outline: 0;
+	background: black;
+}
+
+
+
+.text {
+	color: black;
+	text-align: right;
+}
+
+.contents {
+	display: inline-flex;
+	margin-top: 30px;
+	margin-left: -320px;
+}
+
+.img-box {
+	display: block;
+	margin: 10
+}
+
+.image-box {
+	padding: 50px;
+	display: block;
+	margin: auto;
+	margin-left: 0px;
+	transition: all 1s;
+}
+
+.image-box2 {
+	display: block;
+	margin-left: 700px;
+	transition: all 1s;
+}
+
+.내용 {
+	display: none;
+	float: left;
+/*	background: green;*/
+	padding: 100px;
+	width: 700px;
+	color: red;
+	transition: all 1s;
+	
+}
+
+.모달창 {
+	display: none;
+	z-index: 5;
+	background: white;
+	margin : auto;
+	width: 500px;
+	height: 200px;
+	
+}
+
+.dk {
+
+}
+
+.s {
+	width: 30%;
+	height: 200px;
+}
+
+.btnn1 {
+	font-size: 50px;
+	color: white;
+	display: block;
+	margin: auto;
+	border: 0;
+	outline: 0;
+	background: black;
+	
+}
+
+.btnn2 {
+		font-size: 50px;
+	color: white;
+	display: block;
+	margin: auto;
+	border: 0;
+	outline: 0;
+	background: black;
+}
+
+.testt {
+
+}
+
+.testt1 {
+	display: none;
+}
+
+.하이 {
+		display: flex;	
+	margin: auto;
+	width: 300px;
+	
+}
+
+.slide-box {
+	width: 100vw;
+	float: left;
+	
+}
+
+.slide-container {
+	width: 300vw;
+	transition: transform 1s;
+}
+
+.slide-1 {
+
+}
+
+.slide-next {
+	position: absolute;
+	top: 45%;
+	right: 0;
+	border: none;
+	background: white;
+}
+
+.slide-before {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	border: none;
+	background: white;
+}
+
+.product {
+	margin: 50px;;
+	text-align: center;
+}
+
+.home {
+	
+}
+
+.products-box {
+	width: 400vw;
+	transition: all 1s;
+	
+}
+
+.img-item {
+	width: 100vw;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+
+button {
+	float
+}
+
+.next {
+	position: absolute;
+	top: 90%;
+	right: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	border: none;
+	background: black;
+	color: white;
+}
+
+.before {
+	position: absolute;
+	top: 90%;
+	left: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	border: none;
+	background: black;
+	color: white;
+}
+
+.black-background {
+  display: none;
+	background: rgba(0,0,0,0.5);
+	position:fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.white-background {
+	width: 80%;
+	height: 60%;
+	background: white;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 15px;
+}
+
+.closee {
+		border: none;
+	background: white;
+	color: black;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top: 60%;
+}
+
+.설명 {
+	color: black;
+	margin: auto;
+}
+
+#logo {
+	
+}
